@@ -1,4 +1,5 @@
 export default {
+  badge: 'Σήμα',
   close: 'Close',
   dataIterator: {
     noResultsText: 'Δε βρέθηκαν αποτελέσματα',
@@ -29,6 +30,9 @@ export default {
   carousel: {
     prev: 'הקודם חזותי',
     next: 'הבא חזותי',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}',
+    },
   },
   calendar: {
     moreEvents: '{0} ακόμη',

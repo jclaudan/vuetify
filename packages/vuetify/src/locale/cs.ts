@@ -1,4 +1,5 @@
 export default {
+  badge: 'Odznak',
   close: 'Zavřít',
   dataIterator: {
     noResultsText: 'Nenalezeny žádné záznamy',
@@ -29,6 +30,9 @@ export default {
   carousel: {
     prev: 'Předchozí obrázek',
     next: 'Další obrázek',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}',
+    },
   },
   calendar: {
     moreEvents: '{0} dalších',

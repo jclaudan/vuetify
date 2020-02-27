@@ -1,4 +1,5 @@
 export default {
+  badge: 'バッジ',
   close: '閉じる',
   dataIterator: {
     noResultsText: '検索結果が見つかりません。',
@@ -29,6 +30,9 @@ export default {
   carousel: {
     prev: '前のビジュアル',
     next: '次のビジュアル',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}',
+    },
   },
   calendar: {
     moreEvents: 'さらに{0}',

@@ -9,7 +9,12 @@
           "type": "alert",
           "lang": "sassAlert1",
           "value": "warning"
-        },
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "children": [
         {
           "type": "heading",
           "lang": "setupHeading"
@@ -21,22 +26,19 @@
         {
           "type": "text",
           "lang": "setupText2"
-        },
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "children": [
         {
-          "type": "markup",
-          "value": "sass_import_vuetify_css"
-        },
-        {
-          "type": "text",
-          "lang": "setupText3"
-        },
-        {
-          "type": "markup",
-          "value": "sass_import_vuetify_css_helper_functions"
+          "type": "heading",
+          "lang": "nuxtHeading1"
         },
         {
           "type": "text",
-          "lang": "setupText4"
+          "lang": "nuxtText1a"
         }
       ]
     },
@@ -48,12 +50,117 @@
           "lang": "webpackHeading"
         },
         {
+          "type": "text",
+          "lang": "webpackText1"
+        },
+        {
           "type": "markup",
-          "value": "bash_yarn_install_sass"
+          "value": "js_webpack_sass_variables"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "children": [
+        {
+          "type": "variable-api"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "children": [
+        {
+          "type": "heading",
+          "lang": "exampleHeading1"
         },
         {
           "type": "text",
-          "lang": "webpackText1"
+          "lang": "exampleText1a"
+        },
+        {
+          "type": "markup",
+          "value": "sass_import_vuetify_css"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "children": [
+        {
+          "type": "heading",
+          "lang": "componentSassImportHeading1"
+        },
+        {
+          "type": "text",
+          "lang": "componentSassImportText1a"
+        },
+        {
+          "type": "text",
+          "lang": "componentSassImportText1b"
+        },
+        {
+          "type": "markup",
+          "value": "sass_component_import_variables"
+        },
+        {
+          "type": "text",
+          "lang": "componentSassImportText1c"
+        },
+        {
+          "type": "markup",
+          "value": "sass_local_variables"
+        },
+        {
+          "type": "text",
+          "lang": "componentSassImportText1d"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "children": [
+        {
+          "type": "heading",
+          "lang": "caveatsHeading1"
+        },
+        {
+          "type": "text",
+          "lang": "caveatsText1a"
+        },
+        {
+          "type": "section",
+          "children": [
+            {
+              "type": "heading",
+              "lang": "caveatsHeading2"
+            },
+            {
+              "type": "text",
+              "lang": "caveatsText2a"
+            },
+            {
+              "type": "markup",
+              "value": "sass_import_variables_limitation"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "children": [
+            {
+              "type": "heading",
+              "lang": "caveatsHeading3"
+            },
+            {
+              "type": "text",
+              "lang": "caveatsText3a"
+            },
+            {
+              "type": "markup",
+              "value": "js_preset_compilation"
+            }
+          ]
         }
       ]
     },
@@ -65,7 +172,7 @@
           "value": [
             "styles/colors",
             "customization/theme",
-            "themes/premium"
+            "customization/presets"
           ]
         }
       ]

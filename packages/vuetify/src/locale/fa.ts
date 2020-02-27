@@ -1,4 +1,5 @@
 export default {
+  badge: 'نشان',
   close: 'بستن',
   dataIterator: {
     noResultsText: 'نتیجه‌ای یافت نشد',
@@ -29,6 +30,9 @@ export default {
   carousel: {
     prev: 'اسلاید قبلی',
     next: 'اسلاید بعدی',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}',
+    },
   },
   calendar: {
     moreEvents: '{بیشتر {0',
@@ -38,7 +42,7 @@ export default {
     counterSize: '{0} پرونده ({1} در کل)',
   },
   timePicker: {
-    am: 'AM',
-    pm: 'PM',
+    am: 'قبل از ظهر',
+    pm: 'بعد از ظهر',
   },
 }

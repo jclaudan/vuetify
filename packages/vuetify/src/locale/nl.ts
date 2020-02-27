@@ -1,4 +1,5 @@
 export default {
+  badge: 'insigne',
   close: 'Sluiten',
   dataIterator: {
     noResultsText: 'Geen overeenkomende resultaten gevonden',
@@ -29,6 +30,9 @@ export default {
   carousel: {
     prev: 'Vorig beeld',
     next: 'Volgend beeld',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}',
+    },
   },
   calendar: {
     moreEvents: '{0} meer',

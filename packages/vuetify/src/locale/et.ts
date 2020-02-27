@@ -1,4 +1,5 @@
 export default {
+  badge: 'Märk',
   close: 'Sulge',
   dataIterator: {
     noResultsText: 'Vastavaid kirjeid ei leitud',
@@ -29,6 +30,9 @@ export default {
   carousel: {
     prev: 'Eelmine visuaalne',
     next: 'Järgmine visuaalne',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}',
+    },
   },
   calendar: {
     moreEvents: '{0} veel',

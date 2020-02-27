@@ -1,4 +1,5 @@
 export default {
+  badge: 'Badge',
   close: 'Close',
   dataIterator: {
     noResultsText: 'No matching records found',
@@ -29,6 +30,9 @@ export default {
   carousel: {
     prev: 'Previous visual',
     next: 'Next visual',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}',
+    },
   },
   calendar: {
     moreEvents: '{0} more',

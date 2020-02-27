@@ -1,4 +1,5 @@
 export default {
+  badge: 'Lencana',
   close: 'Tutup',
   dataIterator: {
     noResultsText: 'Tidak ditemukan catatan yang cocok',
@@ -29,6 +30,9 @@ export default {
   carousel: {
     prev: 'Visual sebelumnya',
     next: 'Visual selanjutnya',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}',
+    },
   },
   calendar: {
     moreEvents: '{0} lagi',

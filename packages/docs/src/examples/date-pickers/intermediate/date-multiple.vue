@@ -14,7 +14,6 @@
         :return-value.sync="dates"
         transition="scale-transition"
         offset-y
-        full-width
         min-width="290px"
       >
         <template v-slot:activator="{ on }">
@@ -30,7 +29,7 @@
           ></v-combobox>
         </template>
         <v-date-picker v-model="dates" multiple no-title scrollable>
-          <div class="flex-grow-1"></div>
+          <v-spacer></v-spacer>
           <v-btn text color="primary" @click="menu = false">Cancel</v-btn>
           <v-btn text color="primary" @click="$refs.menu.save(dates)">OK</v-btn>
         </v-date-picker>

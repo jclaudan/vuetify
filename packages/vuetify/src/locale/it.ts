@@ -1,4 +1,5 @@
 export default {
+  badge: 'Distintivo',
   close: 'Chiudi',
   dataIterator: {
     noResultsText: 'Nessun risultato trovato',
@@ -29,6 +30,9 @@ export default {
   carousel: {
     prev: 'Vista precedente',
     next: 'Prossima vista',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}',
+    },
   },
   calendar: {
     moreEvents: '{0} di più',

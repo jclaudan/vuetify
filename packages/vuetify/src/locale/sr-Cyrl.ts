@@ -1,4 +1,5 @@
 export default {
+  badge: 'Значка',
   close: 'Close',
   dataIterator: {
     noResultsText: 'Ни један запис није пронађен',
@@ -29,6 +30,9 @@ export default {
   carousel: {
     prev: 'Превиоус висуал',
     next: 'Нект висуал',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}',
+    },
   },
   calendar: {
     moreEvents: '{0} море',

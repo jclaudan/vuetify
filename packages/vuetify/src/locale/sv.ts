@@ -1,4 +1,5 @@
 export default {
+  badge: 'Bricka',
   close: 'Stäng',
   dataIterator: {
     noResultsText: 'Inga poster funna',
@@ -29,6 +30,9 @@ export default {
   carousel: {
     prev: 'Föregående vy',
     next: 'Nästa vy',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}',
+    },
   },
   calendar: {
     moreEvents: '{0} fler',

@@ -1,4 +1,5 @@
 export default {
+  badge: 'Značka',
   close: 'Zapri',
   dataIterator: {
     noResultsText: 'Ni iskanega zapisa',
@@ -29,6 +30,9 @@ export default {
   carousel: {
     prev: 'Prejšnji prikaz',
     next: 'Naslednji prikaz',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}',
+    },
   },
   calendar: {
     moreEvents: 'Še {0}',

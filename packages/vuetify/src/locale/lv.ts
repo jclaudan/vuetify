@@ -1,4 +1,5 @@
 export default {
+  badge: 'Žetons',
   close: 'Aizvērt',
   dataIterator: {
     noResultsText: 'Nekas netika atrasts',
@@ -29,6 +30,9 @@ export default {
   carousel: {
     prev: 'Iepriekšējais slaids',
     next: 'Nākamais slaids',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}',
+    },
   },
   calendar: {
     moreEvents: 'Vēl {0}',

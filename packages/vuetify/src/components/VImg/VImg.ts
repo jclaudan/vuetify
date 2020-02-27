@@ -74,13 +74,19 @@ export default VResponsive.extend({
     computedAspectRatio (): number {
       return Number(this.normalisedSrc.aspect || this.calculatedAspectRatio)
     },
+    hasIntersect () {
+      return (
+        typeof window !== 'undefined' &&
+        'IntersectionObserver' in window
+      )
+    },
     normalisedSrc (): srcObject {
       return typeof this.src === 'string'
         ? {
           src: this.src,
           srcset: this.srcset,
           lazySrc: this.lazySrc,
-          aspect: Number(this.aspectRatio),
+          aspect: Number(this.aspectRatio || 0),
         } : {
           src: this.src.src,
           srcset: this.srcset || this.src.srcset,
@@ -125,10 +131,15 @@ export default VResponsive.extend({
 
   watch: {
     src () {
-      if (!this.isLoading) this.init()
+      // Force re-init when src changes
+      if (!this.isLoading) this.init(undefined, undefined, true)
       else this.loadImage()
     },
     '$vuetify.breakpoint.width': 'getSrc',
+  },
+
+  mounted () {
+    this.init()
   },
 
   methods: {
@@ -137,7 +148,14 @@ export default VResponsive.extend({
       observer?: IntersectionObserver,
       isIntersecting?: boolean
     ) {
-      if (!isIntersecting && !this.eager) return
+      // If the current browser supports the intersection
+      // observer api, the image is not observable, and
+      // the eager prop isn't being used, do not load
+      if (
+        this.hasIntersect &&
+        !isIntersecting &&
+        !this.eager
+      ) return
 
       if (this.normalisedSrc.lazySrc) {
         const lazyImg = new Image()
@@ -241,11 +259,14 @@ export default VResponsive.extend({
 
     node.data!.staticClass += ' v-image'
 
-    node.data!.directives = [{
+    // Only load intersect directive if it
+    // will work in the current browser.
+    node.data!.directives = this.hasIntersect ? [{
       name: 'intersect',
       options: this.options,
+      modifiers: { once: true },
       value: this.init,
-    } as any]
+    } as any] : []
 
     node.data!.attrs = {
       role: this.alt ? 'img' : undefined,

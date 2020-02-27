@@ -1,4 +1,5 @@
 export default {
+  badge: 'Placa',
   close: 'Cerrar',
   dataIterator: {
     noResultsText: 'Ningún elemento coincide con la búsqueda',
@@ -29,6 +30,9 @@ export default {
   carousel: {
     prev: 'Visual anterior',
     next: 'Visual siguiente',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}',
+    },
   },
   calendar: {
     moreEvents: '{0} más',

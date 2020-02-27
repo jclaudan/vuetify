@@ -1,4 +1,5 @@
 export default {
+  badge: 'Jelvény',
   close: 'Close',
   dataIterator: {
     noResultsText: 'Nincs egyező találat',
@@ -29,6 +30,9 @@ export default {
   carousel: {
     prev: 'Korábbi vizuális',
     next: 'Következő vizuális',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}',
+    },
   },
   calendar: {
     moreEvents: '{0} további',

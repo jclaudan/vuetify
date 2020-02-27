@@ -1,4 +1,5 @@
 export default {
+  badge: '徽章',
   close: '关闭',
   dataIterator: {
     noResultsText: '没有符合条件的结果',
@@ -29,6 +30,9 @@ export default {
   carousel: {
     prev: '上一张',
     next: '下一张',
+    ariaLabel: {
+      delimiter: 'Carousel slide {0} of {1}',
+    },
   },
   calendar: {
     moreEvents: '还有 {0} 项',

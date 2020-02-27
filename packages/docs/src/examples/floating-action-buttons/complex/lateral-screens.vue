@@ -8,7 +8,7 @@
     >
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
       <v-toolbar-title>Page title</v-toolbar-title>
-      <div class="flex-grow-1"></div>
+      <v-spacer></v-spacer>
       <v-btn icon>
         <v-icon>mdi-magnify</v-icon>
       </v-btn>
@@ -19,7 +19,6 @@
         <v-tabs
           v-model="tabs"
           align-with-title
-          background-color="transparent"
         >
           <v-tab href="#one">Item One</v-tab>
           <v-tab href="#two">Item Two</v-tab>

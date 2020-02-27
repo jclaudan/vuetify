@@ -2,10 +2,10 @@
   <v-card>
     <v-card-title>
       Nutrition
-      <div class="flex-grow-1"></div>
+      <v-spacer></v-spacer>
       <v-text-field
         v-model="search"
-        append-icon="search"
+        append-icon="mdi-magnify"
         label="Search"
         single-line
         hide-details
@@ -27,7 +27,7 @@
         headers: [
           {
             text: 'Dessert (100g serving)',
-            align: 'left',
+            align: 'start',
             sortable: false,
             value: 'name',
           },

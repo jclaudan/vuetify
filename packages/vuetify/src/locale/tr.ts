@@ -1,4 +1,5 @@
 export default {
+  badge: 'rozet',
   close: 'Kapat',
   dataIterator: {
     noResultsText: 'Eşleşen veri bulunamadı',
@@ -29,6 +30,9 @@ export default {
   carousel: {
     prev: 'Önceki görsel',
     next: 'Sonraki görsel',
+    ariaLabel: {
+      delimiter: 'Galeri sayfa {0} / {1}',
+    },
   },
   calendar: {
     moreEvents: '{0} tane daha',
